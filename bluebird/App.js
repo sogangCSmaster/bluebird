@@ -4,6 +4,7 @@ import Home from './Home';
 import Setting from './Setting';
 import Details from './Details';
 import Documentation from './Document';
+import OpenSource from './OpenSource';
 
 export default class App extends React.Component {
     render() {
@@ -13,7 +14,8 @@ export default class App extends React.Component {
                     <Scene key="Home" component={Home} initial={true} title="Inbox" rightTitle="Setting" onRight={() => Actions.Setting()}/>
                     <Scene key="Setting" component={Setting} title="Setting" />
                     <Scene key="Details" component={Details} title="Details" />
-                    <Scene key="Documentation" component={Documentation} title="Details" />
+                    <Scene key="Documentation" component={Documentation} title="Document" />
+                    <Scene key="OpenSource" component={OpenSource} title="OpenSource" />
                 </Scene>
             </Router>
         );
