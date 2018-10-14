@@ -1,14 +1,26 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Scene, Router, Modal, Actions } from 'react-native-router-flux';
+import Home from './Home';
 
 export default class App extends React.Component {
     render() {
         return (
-            <View style={styles.container}>
-                <Text>Open up App.js to start working on your app!</Text>
-            </View>
+            <Router backAndroidHandler={this._onBackPress}>
+                <Scene key="root" hideNavBar>
+                    <Scene key="Home" hideNavBar component={Home} initial={true} type="replace"/>
+                </Scene>
+            </Router>
         );
+    }
+
+    _onBackPress = () => {
+        if(Actions.state.index === 0){
+            return false;
+        } else {
+            Actions.pop();
+            return true;
+        }
     }
 }
 
