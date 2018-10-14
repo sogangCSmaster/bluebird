@@ -1,16 +1,17 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native';
 import { Ionicons } from '@expo/vector-icons'
+import { Actions } from 'react-native-router-flux';
 
 const { width, height } = Dimensions.get("window");
 
-export default class Home extends React.Component {
+export default class Setting extends React.Component {
     render() {
         
         return (
             <View style={styles.container}>
 
-                <TouchableOpacity activeOpacity={0.7}>
+                <TouchableOpacity activeOpacity={0.7} onPress={Actions.Documentation}>
                     <View style={styles.wideButton}>
                         <Text style={styles.buttonText}>How to use this App</Text>
                         <Ionicons name="ios-arrow-forward" color={"grey"} size={20} style={{position: "absolute", right: 10}}/>
