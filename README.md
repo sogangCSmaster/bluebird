@@ -44,8 +44,8 @@ curl -H "Content-Type: application/json" -X POST "http://bluebird.sysmetic.co.kr
     "ExponentPushToken[0updZpOAwg3LL9iRnf_vAH]",
     "ExponentPushToken[0updZpOAwg3LL9iRnf_vAH]"
   ],
-  "title": "hello",
-  "body": "world",
+  "title": "title of push notification",
+  "body": "content of push notification",
   "link": "http://www.sysmetic.co.kr",
   "color": "#377B9C"
 }'
