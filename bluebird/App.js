@@ -5,6 +5,7 @@ import Setting from './Setting';
 import Details from './Details';
 import Documentation from './Document';
 import OpenSource from './OpenSource';
+import License from './License';
 
 export default class App extends React.Component {
     render() {
@@ -16,6 +17,7 @@ export default class App extends React.Component {
                     <Scene key="Details" component={Details} title="Details" />
                     <Scene key="Documentation" component={Documentation} title="Document" />
                     <Scene key="OpenSource" component={OpenSource} title="OpenSource" />
+                    <Scene key="License" component={License} title="License" />
                 </Scene>
             </Router>
         );
