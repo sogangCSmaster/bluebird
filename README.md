@@ -18,6 +18,7 @@ For examples
 Developers can make an simple API call with given tokens to send push notifications to the Blue Bird.
 
 **Since this projects is using EXPO, there is no needs for Google's Firebase or any Cloud Messaging service.**
+
 **Expo and Sysmetic Co. is handling & saving all the push notification datas for you**
 
 All pull requests are welcomed!
