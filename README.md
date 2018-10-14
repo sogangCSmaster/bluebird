@@ -14,4 +14,5 @@ Push Notification receiver mobile app for both ios and android
 
 
 ## sample pictures
-<img src="./sample1.png" width="300" style="border: 4px solid black;"/> <img src="./sample2.png" width="300" />
+<kbd><img src="./sample1.png" width="300" style="border: 4px solid black;"/></kbd> <img src="./sample2.png" width="300" />
+
