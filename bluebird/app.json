@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "bluebird",
+    "name": "Blue Bird",
     "description": "This project is really great.",
     "slug": "bluebird",
     "privacy": "public",
@@ -11,7 +11,7 @@
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -21,7 +21,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "kr.co.sysmetic.bluebird",
+      "supportsTablet": false
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "kr.co.sysmetic.bluebird"
     }
   }
 }

@@ -20,19 +20,19 @@ export default class Setting extends React.Component {
 
                 <TouchableOpacity activeOpacity={0.7} onPress={Actions.OpenSource}>
                     <View style={styles.wideButton}>
-                        <Text style={styles.buttonText}>Open Source License</Text>
+                        <Text style={styles.buttonText}>Open Source</Text>
                         <Ionicons name="ios-arrow-forward" color={"grey"} size={20} style={{position: "absolute", right: 10}}/>
                     </View>
                 </TouchableOpacity>
 
-                <TouchableOpacity activeOpacity={0.7}>
+                <TouchableOpacity activeOpacity={0.7} onPress={() => Actions.TermsOfUse({url: 'http://www.sysmetic.co.kr/agreement'})}>
                     <View style={styles.wideButton}>
                         <Text style={styles.buttonText}>Terms of use</Text>
                         <Ionicons name="ios-arrow-forward" color={"grey"} size={20} style={{position: "absolute", right: 10}}/>
                     </View>
                 </TouchableOpacity>
 
-                <TouchableOpacity activeOpacity={0.7}>
+                <TouchableOpacity activeOpacity={0.7} onPress={() => Actions.PrivacyPolicy({url: 'http://www.sysmetic.co.kr/privacy'})}>
                     <View style={styles.wideButton}>
                         <Text style={styles.buttonText}>Privacy policy</Text>
                         <Ionicons name="ios-arrow-forward" color={"grey"} size={20} style={{position: "absolute", right: 10}}/>

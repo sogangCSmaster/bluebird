@@ -6,6 +6,8 @@ import Details from './Details';
 import Documentation from './Document';
 import OpenSource from './OpenSource';
 import License from './License';
+import TermsOfUse from './TermsOfUse';
+import PrivacyPolicy from './PrivacyPolicy';
 
 export default class App extends React.Component {
     render() {
@@ -18,6 +20,8 @@ export default class App extends React.Component {
                     <Scene key="Documentation" component={Documentation} title="Document" />
                     <Scene key="OpenSource" component={OpenSource} title="OpenSource" />
                     <Scene key="License" component={License} title="License" />
+                    <Scene key="TermsOfUse" component={TermsOfUse} title="Terms of use" />
+                    <Scene key="PrivacyPolicy" component={PrivacyPolicy} title="Privacy policy" />
                 </Scene>
             </Router>
         );
