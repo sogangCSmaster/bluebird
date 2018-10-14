@@ -1,14 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Scene, Router, Modal, Actions } from 'react-native-router-flux';
+import { Scene, Router, Actions } from 'react-native-router-flux';
 import Home from './Home';
+import Setting from './Setting';
+import Details from './Details';
 
 export default class App extends React.Component {
     render() {
         return (
             <Router backAndroidHandler={this._onBackPress}>
-                <Scene key="root" hideNavBar>
-                    <Scene key="Home" hideNavBar component={Home} initial={true} type="replace"/>
+                <Scene key="root">
+                    <Scene key="Home" component={Home} initial={true} title="Inbox" rightTitle="Setting" onRight={() => Actions.Setting()}/>
+                    <Scene key="Setting" component={Setting} title="Setting" />
+                    <Scene key="Details" component={Details} title="Details" />
                 </Scene>
             </Router>
         );
@@ -23,12 +26,3 @@ export default class App extends React.Component {
         }
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-});
