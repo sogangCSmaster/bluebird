@@ -33,7 +33,27 @@ All pull requests are welcomed!
 - exp
 - react-native
 
-## How To Run
+## How To Send Push Notification
+You can send push notification using POST method to "http://bluebird.sysmetic.co.kr/send"
+
+example of how to send push notification is as follows using curl
+
+```
+curl -H "Content-Type: application/json" -X POST "http://bluebird.sysmetic.co.kr/send" -d '{
+  "tokens": [
+    "ExponentPushToken[0updZpOAwg3LL9iRnf_vAH]",
+    "ExponentPushToken[0updZpOAwg3LL9iRnf_vAH]"
+  ],
+  "title": "hello",
+  "body": "world",
+  "link": "http://www.sysmetic.co.kr",
+  "color": "#377B9C"
+}'
+```
+
+
+
+## How To Run App
 1. go to bluebird directory where package.json exists.
 2. in command run "npm install"
 3. in command run "expo start"
