@@ -38,6 +38,7 @@ You can send push notification using POST method to "http://bluebird.sysmetic.co
 
 example of how to send push notification to Blue Bird is as follows using curl
 
+1. Example1
 ```
 curl -H "Content-Type: application/json" -X POST "http://bluebird.sysmetic.co.kr/send" -d '{
   "tokens": [
@@ -50,6 +51,26 @@ curl -H "Content-Type: application/json" -X POST "http://bluebird.sysmetic.co.kr
   "color": "#377B9C"
 }'
 ```
+2. Example2
+```
+curl -H "Content-Type: application/json" -X POST "http://bluebird.sysmetic.co.kr/send" -d '{
+  "tokens": [
+    "ExponentPushToken[0updZpOAwg3LL9iRnf_vAH]"
+  ],
+  "title": "[서버 경고]CPU 사용량 90% 이상입니다.",
+  "body": "트래픽 증가로 인한 서버의 CPU 사용량이 90% 이상입니다. 서버의 Scale을 늘려주세요.",
+  "link": "http://www.sysmetic.co.kr",
+  "color": "#E10003"
+}'
+```
+
+Request parameters | Values | Required
+---------- | ------ | -------
+tokens | Array[string] | True
+title | string | True
+body | string | True
+link | string | False
+color | string | False
 
 
 
