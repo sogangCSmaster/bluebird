@@ -1,19 +1,47 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons'
-import axios from 'axios';
+import { Ionicons } from '@expo/vector-icons'
 
 const { width, height } = Dimensions.get("window");
 
 export default class Home extends React.Component {
-    state = {
-        token: ""
-    }
     render() {
-        var { token, notifications } = this.state;
+        
         return (
             <View style={styles.container}>
-                <Text>설정</Text>
+
+                <TouchableOpacity activeOpacity={0.7}>
+                    <View style={styles.wideButton}>
+                        <Text style={styles.buttonText}>How to use this App</Text>
+                        <Ionicons name="ios-arrow-forward" color={"grey"} size={20} style={{position: "absolute", right: 10}}/>
+                    </View>
+                </TouchableOpacity>
+
+                <TouchableOpacity activeOpacity={0.7}>
+                    <View style={styles.wideButton}>
+                        <Text style={styles.buttonText}>Open Source License</Text>
+                        <Ionicons name="ios-arrow-forward" color={"grey"} size={20} style={{position: "absolute", right: 10}}/>
+                    </View>
+                </TouchableOpacity>
+
+                <TouchableOpacity activeOpacity={0.7}>
+                    <View style={styles.wideButton}>
+                        <Text style={styles.buttonText}>Terms of use</Text>
+                        <Ionicons name="ios-arrow-forward" color={"grey"} size={20} style={{position: "absolute", right: 10}}/>
+                    </View>
+                </TouchableOpacity>
+
+                <TouchableOpacity activeOpacity={0.7}>
+                    <View style={styles.wideButton}>
+                        <Text style={styles.buttonText}>Privacy policy</Text>
+                        <Ionicons name="ios-arrow-forward" color={"grey"} size={20} style={{position: "absolute", right: 10}}/>
+                    </View>
+                </TouchableOpacity>
+
+                <View style={{position: "absolute", bottom: 30}}>
+                    <Text style={{color: "#43A3FA"}}>Blue Bird v1.0.0</Text>
+                </View>
+                
             </View>
         );
     }
@@ -26,18 +54,21 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'flex-start',
     },
-    button: {
-        marginTop: 10,
-        height: 50,
-        width: width-30,
-        backgroundColor: '#2BA5F7',
-        justifyContent: "center",
+    wideButton: {
+        width: width,
+        height: 48,
+        backgroundColor: "#fff",
+        justifyContent: "flex-start",
         alignItems: "center",
-        borderRadius: 10
+        flexDirection: "row",
+        borderBottomColor: "grey",
+        borderBottomWidth: StyleSheet.hairlineWidth
     },
     buttonText: {
-        color: "white",
-        fontSize: 17,
-        fontWeight: "600"
+        color: "black",
+        fontWeight: "500",
+        textAlign: "left",
+        marginLeft: 20,
+        fontSize: 17
     }
 });
