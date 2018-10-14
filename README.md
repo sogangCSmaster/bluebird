@@ -11,8 +11,8 @@ Simple push notification receiver app for both ios and android.
 For examples
 1. When my server's CPU utilization is over 90%.
 2. When my server's Memory utilization is over 90%
-3. When my customer bought my product in web application.
-4. Any Back-end Transactions.
+3. When my customer bought product through web application.
+4. Any Back-End Transactions.
 5. etc..
 
 Developers can make an simple API call with given tokens to send push notifications to the Blue Bird.
