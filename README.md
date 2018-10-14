@@ -1,6 +1,17 @@
 # bluebird
 Push Notification receiver mobile app for both ios and android
 
+## Requirements
+- nodejs
+- expo-cli
+- exp
+- react-native
+
+## How To Run
+1. go to bluebird directory where package.json exists.
+2. in command run "npm install"
+3. in command run "expo start"
+
+
 ## sample pictures
-<img src="./sample1.png" width="200" />
-<img src="https://user-images.githubusercontent.com/32369381/46915885-59777    580-cfed-11e8-9c1c-a5fc0645a1d9.png" width="200" />
+<img src="./sample1.png" width="300" /> <img src="./sample2.png" width="300" />
