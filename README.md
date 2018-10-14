@@ -36,7 +36,7 @@ All pull requests are welcomed!
 ## How To Send Push Notification
 You can send push notification using POST method to "http://bluebird.sysmetic.co.kr/send"
 
-example of how to send push notification is as follows using curl
+example of how to send push notification to Blue Bird is as follows using curl
 
 ```
 curl -H "Content-Type: application/json" -X POST "http://bluebird.sysmetic.co.kr/send" -d '{
