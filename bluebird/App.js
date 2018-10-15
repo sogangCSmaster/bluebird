@@ -12,7 +12,7 @@ import PrivacyPolicy from './PrivacyPolicy';
 export default class App extends React.Component {
     render() {
         return (
-            <Router backAndroidHandler={this._onBackPress}>
+            <Router backAndroidHandler={this._onBackPress} navigationBarStyle={{borderColor: '#50E0FF'}}>
                 <Scene key="root">
                     <Scene key="Home" component={Home} initial={true} title="Inbox" rightTitle="Setting" onRight={() => Actions.Setting()}/>
                     <Scene key="Setting" component={Setting} title="Setting" />
