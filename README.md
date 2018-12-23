@@ -4,6 +4,8 @@
 
 Simple push notification receiver app for both ios and android.
 
+- 2018/12/20 This project is not on service
+
 
 **Blue Bird is an open source mobile application that makes easier for developers to give "Push Notifications" to the app when needed.**
 
